@@ -1,0 +1,46 @@
+name: green_vibe
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.4 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_svg: ^1.1.6
+  provider: ^6.0.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+
+flutter:
+  uses-material-design: true
+
+
+  assets:
+    - assets/images/svg/
+    # - assets/fonts/
+
+  fonts:
+    - family: Cambay
+      fonts:
+        - asset: assets/fonts/Cambay-Regular.ttf
+        - asset: assets/fonts/Cambay-Bold.ttf
+        - asset: assets/fonts/Cambay-BoldItalic.ttf
+        - asset: assets/fonts/Cambay-Italic.ttf
+        
+    # - family: Trajan Pro
+    #   fonts:
+    #     - asset: fonts/TrajanPro.ttf
+    #     - asset: fonts/TrajanPro_Bold.ttf
+    #       weight: 700
+

@@ -19,17 +19,21 @@ class SideBarElements extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    Icons.category,
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  icon: Image.asset(
+                    'assets/images/icons/three_dots.png',
                     color: Colors.white,
+                    width: 24,
                   ),
                 ),
                 const CategorySelectord(),
                 IconButton(
                   onPressed: () {},
-                  icon: const Icon(
-                    Icons.home_outlined,
+                  icon: Image.asset(
+                    width: 24,
+                    "assets/images/icons/home.png",
                     color: Colors.white,
                   ),
                 ),

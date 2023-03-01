@@ -1,6 +1,9 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:flutter/material.dart';
 import 'package:green_vibe/models/plant_details.dart';
 import 'package:green_vibe/presentation/ui/homePage/components/plant_card.dart';
+import 'package:green_vibe/presentation/ui/searchPage/app_search_page.dart';
 import 'package:provider/provider.dart';
 
 import '../../../../provider/data_provider.dart';
@@ -58,6 +61,7 @@ class HomePageItems extends StatelessWidget {
       slivers: <Widget>[
         SliverAppBar(
           floating: true,
+          leading: const SizedBox(),
           backgroundColor: Colors.white,
           foregroundColor: Colors.white,
           surfaceTintColor: Colors.white,
@@ -94,7 +98,7 @@ class HomePageItems extends StatelessWidget {
             IconButton(
               icon: const Icon(Icons.search),
               tooltip: 'search',
-              onPressed: () {},
+              onPressed: () => AppSearchPage(context).navigateToSearchPage(),
             ),
           ],
         ),

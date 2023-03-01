@@ -1,9 +1,7 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:green_vibe/models/plant_details.dart';
 
-import '../../../common components/add_to_cart_button.dart';
+import '../../common components/add_to_cart_button.dart';
 
 class DetailsPageTopPart extends StatefulWidget {
   final PlantDetails data;

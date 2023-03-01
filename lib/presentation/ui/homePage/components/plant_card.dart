@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:green_vibe/models/plant_details.dart';
-import 'package:green_vibe/presentation/common%20components/add_to_cart_button.dart';
+import 'package:green_vibe/presentation/ui/common%20components/add_to_cart_button.dart';
 
 import '../../detailsPage/details_page.dart';
 
@@ -69,11 +69,17 @@ class _PlantCardState extends State<PlantCard> {
                     return child;
                   }
                   return Center(
-                    child: CircularProgressIndicator(
-                      value: loadingProgress.expectedTotalBytes != null
-                          ? loadingProgress.cumulativeBytesLoaded /
-                              loadingProgress.expectedTotalBytes!
-                          : null,
+                    child: SizedBox(
+                      height: 250,
+                      width: 250,
+                      child: Center(
+                        child: CircularProgressIndicator(
+                          value: loadingProgress.expectedTotalBytes != null
+                              ? loadingProgress.cumulativeBytesLoaded /
+                                  loadingProgress.expectedTotalBytes!
+                              : null,
+                        ),
+                      ),
                     ),
                   );
                 },

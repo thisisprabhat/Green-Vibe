@@ -36,18 +36,18 @@ class DetailsPage extends StatelessWidget {
                   HeightTemperaturePot(
                     title: "Height",
                     description: "${data.height} cm",
-                    icon: Icons.height_sharp,
+                    icon: 'assets/images/icons/scale.png',
                   ),
                   HeightTemperaturePot(
                     title: "Temperature",
                     description:
                         "${data.temMin.toInt()}°C - ${data.temmax.toInt()}°C",
-                    icon: Icons.thermostat_sharp,
+                    icon: 'assets/images/icons/thermometer.png',
                   ),
                   HeightTemperaturePot(
                     title: "Pot",
                     description: data.potDescription,
-                    icon: Icons.drafts_sharp,
+                    icon: 'assets/images/icons/plant.png',
                   )
                 ],
               ),
@@ -144,7 +144,7 @@ class HeightTemperaturePot extends StatelessWidget {
   }) : super(key: key);
   final String title;
   final String description;
-  final IconData icon;
+  final String icon;
 
   @override
   Widget build(BuildContext context) {
@@ -152,16 +152,20 @@ class HeightTemperaturePot extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Icon(
-          icon,
-          color: Colors.white,
-          size: 44,
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Image.asset(
+            icon,
+            width: 36,
+            height: 36,
+            color: Colors.white,
+          ),
         ),
         Text(
           title,
           style: const TextStyle(
               color: Colors.white,
-              fontWeight: FontWeight.w800,
+              fontWeight: FontWeight.w700,
               letterSpacing: 1.2,
               fontSize: 18),
         ),
@@ -172,7 +176,7 @@ class HeightTemperaturePot extends StatelessWidget {
           description,
           style: const TextStyle(
               color: Colors.white,
-              fontWeight: FontWeight.w400,
+              fontWeight: FontWeight.w500,
               letterSpacing: 1.2,
               fontSize: 14),
         ),

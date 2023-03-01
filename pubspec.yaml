@@ -14,6 +14,9 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_svg: ^1.1.6
   provider: ^6.0.4
+  lottie: ^1.4.3
+  circular_countdown_timer: ^0.2.3
+  search_page: ^2.2.0
 
 dev_dependencies:
   flutter_test:
@@ -28,6 +31,8 @@ flutter:
 
   assets:
     - assets/images/svg/
+    - assets/lottie/
+    - assets/images/icons/
     # - assets/fonts/
 
   fonts:

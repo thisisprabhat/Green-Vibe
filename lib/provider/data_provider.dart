@@ -16,6 +16,8 @@ class DataProvider extends ChangeNotifier {
         "https://github.com/thisisprabhat/projectImages/blob/main/elephant%20bush/edit3.png?raw=true",
         "https://github.com/thisisprabhat/projectImages/blob/main/elephant%20bush/edit4.png?raw=true"
       ],
+
+
       height: 13,
       temMin: 18,
       temmax: 24,

@@ -59,31 +59,40 @@ class _PlantCardState extends State<PlantCard> {
               const SizedBox(
                 height: 20,
               ),
-              Image.network(
-                widget.data.imageUrls[0],
-                height: 250,
-                width: 250,
-                loadingBuilder: (BuildContext context, Widget child,
-                    ImageChunkEvent? loadingProgress) {
-                  if (loadingProgress == null) {
-                    return child;
-                  }
-                  return Center(
-                    child: SizedBox(
-                      height: 250,
-                      width: 250,
-                      child: Center(
-                        child: CircularProgressIndicator(
-                          value: loadingProgress.expectedTotalBytes != null
-                              ? loadingProgress.cumulativeBytesLoaded /
-                                  loadingProgress.expectedTotalBytes!
-                              : null,
-                        ),
-                      ),
-                    ),
-                  );
-                },
+              Hero(
+                tag: widget.data.imageUrls[0],
+                child: Image.asset(
+                  widget.data.imageUrls[0],
+                  height: 250,
+                  width: 250,
+                ),
               ),
+              //TODO: make it work with network images when real db  is ready
+              // Image.network(
+              //   widget.data.imageUrls[0],
+              //   height: 250,
+              //   width: 250,
+              //   loadingBuilder: (BuildContext context, Widget child,
+              //       ImageChunkEvent? loadingProgress) {
+              //     if (loadingProgress == null) {
+              //       return child;
+              //     }
+              //     return Center(
+              //       child: SizedBox(
+              //         height: 250,
+              //         width: 250,
+              //         child: Center(
+              //           child: CircularProgressIndicator(
+              //             value: loadingProgress.expectedTotalBytes != null
+              //                 ? loadingProgress.cumulativeBytesLoaded /
+              //                     loadingProgress.expectedTotalBytes!
+              //                 : null,
+              //           ),
+              //         ),
+              //       ),
+              //     );
+              //   },
+              // ),
               const SizedBox(
                 height: 5,
               ),

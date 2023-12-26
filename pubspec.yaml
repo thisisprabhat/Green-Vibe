@@ -33,6 +33,11 @@ flutter:
     - assets/images/svg/
     - assets/lottie/
     - assets/images/icons/
+    - assets/images/elephant_bush/
+    - assets/images/Neanthe_Bella_Palm_Plant/
+    - assets/images/rubber_plant/
+    - assets/images/snake/
+    - assets/images/
     # - assets/fonts/
 
   fonts:

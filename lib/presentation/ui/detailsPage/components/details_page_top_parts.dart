@@ -37,25 +37,29 @@ class _DetailsPageTopPartState extends State<DetailsPageTopPart> {
                   scrollDirection: Axis.vertical,
                   itemBuilder: (context, index) {
                     return SizedBox(
-                      width: 200,
-                      child: Image.network(
-                        widget.data.imageUrls[index],
-                        loadingBuilder: (BuildContext context, Widget child,
-                            ImageChunkEvent? loadingProgress) {
-                          if (loadingProgress == null) {
-                            return child;
-                          }
-                          return Center(
-                            child: CircularProgressIndicator(
-                              value: loadingProgress.expectedTotalBytes != null
-                                  ? loadingProgress.cumulativeBytesLoaded /
-                                      loadingProgress.expectedTotalBytes!
-                                  : null,
-                            ),
-                          );
-                        },
-                      ),
-                    );
+                        width: 200,
+                        child: Hero(
+                            tag: widget.data.imageUrls[0],
+                            child: Image.asset(widget.data.imageUrls[index]))
+                        //TODO: make it work with network images when real db  is ready
+                        //  Image.network(
+                        //   widget.data.imageUrls[index],
+                        //   loadingBuilder: (BuildContext context, Widget child,
+                        //       ImageChunkEvent? loadingProgress) {
+                        //     if (loadingProgress == null) {
+                        //       return child;
+                        //     }
+                        //     return Center(
+                        //       child: CircularProgressIndicator(
+                        //         value: loadingProgress.expectedTotalBytes != null
+                        //             ? loadingProgress.cumulativeBytesLoaded /
+                        //                 loadingProgress.expectedTotalBytes!
+                        //             : null,
+                        //       ),
+                        //     );
+                        //   },
+                        // ),
+                        );
                   },
                   itemCount: widget.data.imageUrls.length, // Can be null
                 ),

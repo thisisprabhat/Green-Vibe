@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:green_vibe/presentation/ui/loginAndSignUpPage/loginPage.dart';
+import 'package:green_vibe/presentation/ui/loginAndSignUpPage/login_page.dart';
 import 'package:green_vibe/provider/data_provider.dart';
 import 'package:green_vibe/provider/home_page_provider.dart';
 import 'package:provider/provider.dart';
@@ -24,8 +24,9 @@ class GreenVibe extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'GreenVibe',
-        theme: ThemeData.light().copyWith(
+        theme: ThemeData.light(
           useMaterial3: true,
+        ).copyWith(
           colorScheme: ColorScheme.fromSeed(seedColor: const Color(0XFF67864a))
               .copyWith(
                   primary: const Color(0XFF67864a), onPrimary: Colors.white),

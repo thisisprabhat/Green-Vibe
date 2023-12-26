@@ -37,7 +37,7 @@ class AppSearchPage {
                 ],
               ),
             ),
-            builder: ((PlantDetails) => SearchListTile(data: PlantDetails)),
+            builder: ((plantDetails) => SearchListTile(data: plantDetails)),
             suggestion:
                 Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
               const Padding(
@@ -50,10 +50,10 @@ class AppSearchPage {
               for (int i = 0; i < 2; i++)
                 SearchListTile(data: context.read<DataProvider>().green[i])
             ]),
-            filter: (PlantDetails) => [
-                  PlantDetails.name,
-                  PlantDetails.cost.toString(),
-                  PlantDetails.specialFeatures.toString()
+            filter: (plantDetails) => [
+                  plantDetails.name,
+                  plantDetails.cost.toString(),
+                  plantDetails.specialFeatures.toString()
                 ],
             items: context.read<DataProvider>().green),
       );

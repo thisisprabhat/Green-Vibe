@@ -86,11 +86,11 @@ class LoginPage extends StatelessWidget {
                       builder: (context) => const OtpPage(),
                     ),
                   ),
-                  child: SizedBox(
+                  child: const SizedBox(
                     width: double.infinity,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
+                      children: [
                         Icon(Icons.login),
                         Text("  Login"),
                       ],
@@ -105,11 +105,11 @@ class LoginPage extends StatelessWidget {
                       elevation: 0,
                       backgroundColor: colorscheme.primaryContainer),
                   onPressed: () {},
-                  child: SizedBox(
+                  child: const SizedBox(
                     width: double.infinity,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
+                      children: [
                         Icon(Icons.g_mobiledata),
                         Text("  Login with google"),
                       ],
@@ -126,11 +126,11 @@ class LoginPage extends StatelessWidget {
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(elevation: 1),
                   onPressed: () {},
-                  child: SizedBox(
+                  child: const SizedBox(
                     width: double.infinity,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
+                      children: [
                         Icon(Icons.how_to_reg_outlined),
                         Text("  Register as new user"),
                       ],
@@ -157,9 +157,9 @@ class CustomButton extends StatelessWidget {
       highlightColor: Colors.red,
       onHover: ((value) =>
           value ? debugPrint("howered") : debugPrint("unhowered")),
-      child: Row(
+      child: const Row(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: const [
+        children: [
           Icon(
             Icons.login,
             color: Colors.red,

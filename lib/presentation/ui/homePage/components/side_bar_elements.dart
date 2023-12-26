@@ -75,14 +75,14 @@ class _CategorySelectordState extends State<CategorySelectord> {
           child: Stack(
             alignment: alignment,
             children: [
-              SizedBox(
+              const SizedBox(
                 width: 320,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
+                      children: [
                         SideBarText(
                             alignment: Alignment.bottomLeft,
                             index: 0,
@@ -97,7 +97,7 @@ class _CategorySelectordState extends State<CategorySelectord> {
                             title: "Green Plant"),
                       ],
                     ),
-                    const SizedBox(
+                    SizedBox(
                       height: 10,
                     )
                   ],

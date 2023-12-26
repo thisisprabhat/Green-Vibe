@@ -11,13 +11,11 @@ class DataProvider extends ChangeNotifier {
       description:
           "The jade plant is an extremely popular succulent houseplant with fleshy, Sometimes called the money plant or dollar plant, these plants were once thought to bring good luck to their owners so were often given as housewarming gifts.",
       imageUrls: [
-        "https://github.com/thisisprabhat/projectImages/blob/main/elephant%20bush/edit1.png?raw=true",
-        "https://github.com/thisisprabhat/projectImages/blob/main/elephant%20bush/edit2.png?raw=true",
-        "https://github.com/thisisprabhat/projectImages/blob/main/elephant%20bush/edit3.png?raw=true",
-        "https://github.com/thisisprabhat/projectImages/blob/main/elephant%20bush/edit4.png?raw=true"
+        "assets/images/elephant_bush/edit1.png",
+        "assets/images/elephant_bush/edit2.png",
+        "assets/images/elephant_bush/edit3.png",
+        "assets/images/elephant_bush/edit4.png"
       ],
-
-
       height: 13,
       temMin: 18,
       temmax: 24,
@@ -39,8 +37,8 @@ class DataProvider extends ChangeNotifier {
       description:
           "Sansevieria trifasciata, Snake Plant (var. laurentii) Plant is a popular houseplant with leaves having dark green centers that are surrounded by light yellow to gold edges.",
       imageUrls: [
-        "https://raw.githubusercontent.com/thisisprabhat/projectImages/main/snake/Snake%2BPlant%2Bin%2BPot.webp",
-        "https://raw.githubusercontent.com/thisisprabhat/projectImages/main/snake/Snake%2BPlant%2Bin%2BPot%20(1).webp",
+        "assets/images/snake/snake_plant.webp",
+        "assets/images/snake/snake_pot.webp",
       ],
       cost: 8,
       height: 23,
@@ -67,10 +65,10 @@ class DataProvider extends ChangeNotifier {
       description:
           "The jade plant is an extremely popular succulent houseplant with fleshy, Sometimes called the money plant or dollar plant, these plants were once thought to bring good luck to their owners so were often given as housewarming gifts.",
       imageUrls: [
-        "https://github.com/thisisprabhat/projectImages/blob/main/elephant%20bush/edit1.png?raw=true",
-        "https://github.com/thisisprabhat/projectImages/blob/main/elephant%20bush/edit2.png?raw=true",
-        "https://github.com/thisisprabhat/projectImages/blob/main/elephant%20bush/edit3.png?raw=true",
-        "https://github.com/thisisprabhat/projectImages/blob/main/elephant%20bush/edit4.png?raw=true"
+        "assets/images/elephant_bush/edit1.png",
+        "assets/images/elephant_bush/edit2.png",
+        "assets/images/elephant_bush/edit3.png",
+        "assets/images/elephant_bush/edit4.png"
       ],
       height: 13,
       temMin: 18,
@@ -93,8 +91,8 @@ class DataProvider extends ChangeNotifier {
       description:
           "Sansevieria trifasciata, Snake Plant (var. laurentii) Plant is a popular houseplant with leaves having dark green centers that are surrounded by light yellow to gold edges.",
       imageUrls: [
-        "https://raw.githubusercontent.com/thisisprabhat/projectImages/main/snake/Snake%2BPlant%2Bin%2BPot.webp",
-        "https://raw.githubusercontent.com/thisisprabhat/projectImages/main/snake/Snake%2BPlant%2Bin%2BPot%20(1).webp",
+        "assets/images/snake/snake_plant.webp",
+        "assets/images/snake/snake_pot.webp",
       ],
       cost: 8,
       height: 23,
@@ -122,8 +120,8 @@ class DataProvider extends ChangeNotifier {
       description:
           "Areca palm is clump-growing with ringed, yellow leaf-ribs. The foliage is evergreen.",
       imageUrls: [
-        "https://raw.githubusercontent.com/thisisprabhat/projectImages/main/Neanthe%20Bella%20Palm%20Plant/Neanthe%2BBella%2BPalm%2BPlant%2Bin%2BPot.webp",
-        "https://raw.githubusercontent.com/thisisprabhat/projectImages/main/Neanthe%20Bella%20Palm%20Plant/Neanthe%2BBella%2BPalm%2BPlant%2Bin%2BPot%20(1).webp"
+        "assets/images/Neanthe_Bella_Palm_Plant/Neanthe_Plant.webp",
+        "assets/images/Neanthe_Bella_Palm_Plant/Neanthe_Pot.webp"
       ],
       height: 92,
       temMin: 18,
@@ -144,8 +142,8 @@ class DataProvider extends ChangeNotifier {
       description:
           "Sansevieria trifasciata, Snake Plant (var. laurentii) Plant is a popular houseplant with leaves having dark green centers that are surrounded by light yellow to gold edges.",
       imageUrls: [
-        "https://raw.githubusercontent.com/thisisprabhat/projectImages/main/snake/Snake%2BPlant%2Bin%2BPot.webp",
-        "https://raw.githubusercontent.com/thisisprabhat/projectImages/main/snake/Snake%2BPlant%2Bin%2BPot%20(1).webp",
+        "assets/images/snake/snake_plant.webp",
+        "assets/images/snake/snake_pot.webp",
       ],
       cost: 8,
       height: 23,
@@ -172,10 +170,10 @@ class DataProvider extends ChangeNotifier {
       description:
           "The jade plant is an extremely popular succulent houseplant with fleshy, Sometimes called the money plant or dollar plant, these plants were once thought to bring good luck to their owners so were often given as housewarming gifts.",
       imageUrls: [
-        "https://github.com/thisisprabhat/projectImages/blob/main/elephant%20bush/edit1.png?raw=true",
-        "https://github.com/thisisprabhat/projectImages/blob/main/elephant%20bush/edit2.png?raw=true",
-        "https://github.com/thisisprabhat/projectImages/blob/main/elephant%20bush/edit3.png?raw=true",
-        "https://github.com/thisisprabhat/projectImages/blob/main/elephant%20bush/edit4.png?raw=true"
+        "assets/images/elephant_bush/edit1.png",
+        "assets/images/elephant_bush/edit2.png",
+        "assets/images/elephant_bush/edit3.png",
+        "assets/images/elephant_bush/edit4.png"
       ],
       height: 13,
       temMin: 18,
@@ -198,8 +196,8 @@ class DataProvider extends ChangeNotifier {
         description:
             "The rubber plant (Ficus elastica) is a popular ornamental plant from the Ficus genus. For the indoor grower looking for a tree type plant species with attractive foliage, this is an excellent choice.",
         imageUrls: [
-          "https://github.com/thisisprabhat/projectImages/blob/main/rubber%20plant/edit1.jpg?raw=true",
-          "https://github.com/thisisprabhat/projectImages/blob/main/rubber%20plant/edit2.jpg?raw=true",
+          "assets/images/rubber_plant/edit1.jpg",
+          "assets/images/rubber_plant/edit2.jpg",
         ],
         cost: 14,
         height: 41,
